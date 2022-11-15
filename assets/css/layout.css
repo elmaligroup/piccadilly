@@ -1,0 +1,105 @@
+/* Padding and Margin Fixes */
+.container-fluid,
+.container,.container-xl,.container-lg, .container-xxl {
+    padding: 0;
+    margin: 0;
+}
+
+/* Font Classes */
+span,p,a,button,h1,h2,h3,h4,h5,h6{
+    font-family: 'Manrope';
+}
+.font-manrope {
+    font-family: 'Manrope';
+}
+
+.font-roboto {
+    font-family: 'Roboto';
+}
+
+.fontColor-Golden {
+    color: #B18D60;
+}
+
+.fontColor-Black {
+    color: #000000;
+}
+.fs-Intro{
+        font-weight: 700;
+        font-size: 3.5em;
+        line-height: 76px;
+}
+.pageNavs{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #070707e1;  
+}
+.pageNavs:hover{
+    color: #070707; 
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* others */
+.line{
+    height: 3px;
+    user-select: none;
+    color: transparent;
+    background-color: #EEEEEE
+}
+
+button{
+    background-color: transparent;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#first{
+    border: 2px solid #000000;
+}
+#second{
+    border: 2px solid #FFFFFF;
+}
+#introduction-container{
+    position: relative;
+}
+#introduction-container section{
+    position: relative;
+}
+.logovector{
+    position: absolute;
+    right:0;
+    top: 14%;
+    user-select: none;
+}
+
+/* Background Classes */
+.bg-main {
+    background: #FFFFFF;
+}
+
+.bg-black {
+    background: #070707;
+}
+
+.bg-golden {
+    background: #A17652;
+}
+
+.bg-grey {
+    background: #EEEEEE;
+}
+
+/* 100% Responsive */
+@media (max-width: 1440px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: unset;
+        width: 100%;
+    }
+
+}
