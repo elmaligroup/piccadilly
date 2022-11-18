@@ -109,7 +109,7 @@ color: #000000;
     .fullwidthbp{
         width: 100% !important;
     }
-    #workwithus2{
+    #workwithus2,#workwithus{
         padding: 1em;
     }
     #workwithus,#workwithus2 img{
@@ -126,5 +126,17 @@ color: #000000;
     #options .bg-golden{
         width: 100% !important;
         text-align: center;
+    }
+}
+@media screen and (max-width : 650px){
+    #testimonials{
+        justify-content: flex-start !important;
+        padding: 1em;
+    }
+    #testimonials .testimonials-cont{
+        width: 100% !important;
+    }
+    #testimonials p{
+        font-size: 1.5rem;
     }
 }

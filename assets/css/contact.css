@@ -1,0 +1,7 @@
+.accordion-button:focus-visible{
+    outline: 0 !important;
+}
+.accordion-button:focus{
+    outline: 0 !important;
+    appearance: none !important;
+}

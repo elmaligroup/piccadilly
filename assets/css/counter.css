@@ -20,6 +20,24 @@
 .card_arrows{
     transform : scale(1.9);position: absolute;right: 1.5em;bottom: 1.5em;border: 0.1px solid white;border-radius: 100%;color: white;
 }
+@media screen and (max-width : 1010px) {
+    #ourteam-navs{
+        justify-content: flex-start !important;
+        padding: 1em;
+        gap: 5em;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width : 900px) {
+    #pagenav-container{
+        justify-content: flex-start !important;
+        padding: 1em;
+        gap: 5em;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+}
 @media screen and (max-width : 400px) {
     .ourteam{
         padding: 2em !important;
