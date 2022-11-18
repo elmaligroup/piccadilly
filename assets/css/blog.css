@@ -1,9 +1,7 @@
 #content-container{
     padding: 2em;
 }
-.blogcard img{
-    max-width: 350px;
-}
+
 .blogcard h3{
     font-weight: 700;
 }
@@ -16,4 +14,23 @@
     padding: 0.5em 0.75em;
     color: white;
     border-radius: 24px;
+}
+@media screen and (max-width : 1200px) {
+    .blogrow{
+        gap: 2em;
+    }
+}
+@media screen and (max-width : 800px) {
+    #content-container .blogrow{
+        justify-content: center !important;
+        flex-direction: column;
+    }
+    .blogcard{
+        max-width: unset !important;
+    }
+}
+@media screen and (max-width : 400px) {
+    .blogcard{
+        width: 100% !important;
+    }
 }
