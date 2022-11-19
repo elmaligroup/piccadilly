@@ -14,7 +14,7 @@
 
 .ourteam .col{
     max-width: fit-content;
-    padding: 1em 1em 1em 0em;
+    padding: 1em;
     position: relative;
 }
 .card_arrows{
@@ -41,5 +41,8 @@
 @media screen and (max-width : 400px) {
     .ourteam{
         padding: 2em !important;
+    }
+    #managers .row{
+        display: flex;flex-direction: column; align-items: center; justify-content: center;margin-right: 0 !important;margin-left: 0 !important;
     }
 }
