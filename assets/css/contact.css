@@ -5,3 +5,16 @@
     outline: 0 !important;
     appearance: none !important;
 }
+
+@media screen and (max-width : 992px){
+    #secondpara{
+        padding: 0 !important;
+    }
+    #counterheader{
+        margin-left: 0 !important;
+    }
+    #secondpara .fs-Intro{
+        font-size: 2rem !important;
+        line-height: 50px;
+      }
+}
