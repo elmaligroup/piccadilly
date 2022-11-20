@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Piccadilly Real Estate is a firm that sells houses in Turkey(TR) and in United Kingdom(UK) in various cities.Houses and properties for everyone and every business.">
+    <meta name="keywords" content="piccadilly,real estate,property,houses,rent,for sale,building">
+    <meta name="author" content="Piccadilly">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piccadilly Estate - Real Estate</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +27,276 @@
     <link rel="stylesheet" href="./assets/css/contact.css">
     <title>Piccadilly Estate</title>
 </head>
+<style>
+    #cities{
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        user-select: none;
+        overflow-x: scroll;
+        padding: 1em;
+        -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+    }
+    .cityTag{
+        background-color: #F2F2F2;
+        padding: 0.5em 1em;
+        border-radius: 36px;
+        white-space: nowrap;
+    }
+    .cityTag.active{
+        background-color: black;
+        color: white;
+    }
+    #cities::-webkit-scrollbar {
+        display: none;
+    }
+    .developer-card{
+        width: 30%;height: 550px;display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .developer-card-header{
+        width: 100%;
+    }
+    .developer-card-info{
+        min-height: 150px;
+    }
+    .developer-card-header h2{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: #000000;
+    }
+    @media screen and (max-width : 900px) {
+        .developer-card{
+            width: 48% !important;
+        }
+    }
+    @media screen and (max-width : 650px) {
+        .developer-card{
+            width: 100% !important;
+        }
+    }
+    .btn_arrows {
+        transform : scale(1.8);border: 0.05px solid black;border-radius: 100%;color: black;
+}
+</style>
 <body>
     
     <div class="container-fluid d-flex align-items-center justify-content-center" id="main">
         <div class="container d-flex flex-column align-items-center justify-content-center">
             <section id="another" class="container-fluid d-flex justify-content-center align-items-center text-center">
-                <img src="./assets/image/aboutusbanner.png" alt="">
+                <img src="./assets/image/developers.png" class="img-fluid" style="min-height: 300px" alt="developers">
             </section> 
+            <section id="developers-pagenav" class="container-fluid">
+
+            </section>
+            <section class="container mt-3 p-0 justify-content-center pt-5 pb-5" id="info_container">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row align-items-start justify-content-center" style="margin-left: 0" id="textsCont">
+                        <div class="col-lg-6">
+                            <h1 id="info_container-2" class="font-manrope fs-Intro">Our Developers</h1>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="font-manrope" style="font-size: 1.125em">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat at, repellendus quos, modi in ipsam cumque voluptatum ipsum, enim pariatur quo! Asperiores esse dignissimos sapiente repellat laudantium, maiores iure nihil reprehenderit impedit cumque autem veritatis libero, molestias corrupti, nam aspernatur omnis inventore! Ad quos consequatur reprehenderit tempore, amet illum cum? ipsum dolor sit amet consectetur adipisicing elit. Impedit repudiandae quam labore incidunt vel fugit cupiditate repellendus architecto non libero. Velit minima totam ad deleniti delectus architecto blanditiis iste possimus?</p>
+                            <p class="font-manrope" style="font-size: 1.125em">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo iure maxime libero quod repellendus placeat cupiditate quam quidem accusantium cum iste recusandae rerum deleniti, asperiores optio est, aperiam dicta vero?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="developers" class="container-fluid pb-3">
+                <div id="cities">
+                    <span class="cityTag active">All</span>
+                </div>
+                <div id="properties" class="w-100 d-flex align-items-end justify-content-around flex-wrap p-3" style="row-gap: 5em">
+                    <div class="developer-card">
+                        <div class="developer-card-header">
+                            <img src="./assets/image/devcard.png" class="img-fluid" alt="devcard">
+                            <h2 class="mt-4">Chelsea Creek</h2>
+                        </div>
+                        <div class="developer-card-info">
+                            <p>Chelsea Creek is home to luxurious canal side apartments that bring a characteristically European style of living to Central London. A stunning location with tree-lined avenues and meandering waterways offer a refreshingly unique urban lifestyle.</p>
+                        </div>
+                        <div class="w-100">
+                            <h4 class="adress">Chelsea, SW6 2FS</h4>    
+                            <div style="padding-left:0.5em;padding-top:1em">
+                                <a href="">                                        
+                                    <span class="btn_arrows material-symbols-outlined card_arrows">
+                                        arrow_right_alt
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-card-header">
+                            <img src="./assets/image/devcard.png" class="img-fluid" alt="devcard">
+                            <h2 class="mt-4">Royal Exchange</h2>
+                        </div>
+                        <div class="developer-card-info">
+                            <p>Homes in the heart of Kingston upon Thames with 24 hour concierge, Residents’ only gym, cinema room and meeting room and 30 minutes to London Waterloo via train</p>
+                        </div>
+                        <div class="w-100">
+                            <h4 class="adress">Chelsea, SW6 2FS</h4>    
+                            <div style="padding-left:0.5em;padding-top:1em">
+                                <a href="">                                        
+                                    <span class="btn_arrows material-symbols-outlined card_arrows">
+                                        arrow_right_alt
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-card-header">
+                            <img src="./assets/image/devcard.png" class="img-fluid" alt="devcard">
+                            <h2 class="mt-4">White City Living</h2>
+                        </div>
+                        <div class="developer-card-info">
+                            <p>With more than 2,300 homes set in eight acres of parks and gardens, sur-rounded by world-class retail, entertainment, education, culture and commerce.</p>
+                        </div>
+                        <div class="w-100">
+                            <h4 class="adress">Chelsea, SW6 2FS</h4>    
+                            <div style="padding-left:0.5em;padding-top:1em">
+                                <a href="">                                        
+                                    <span class="btn_arrows material-symbols-outlined card_arrows">
+                                        arrow_right_alt
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-card-header">
+                            <img src="./assets/image/devcard.png" class="img-fluid" alt="devcard">
+                            <h2 class="mt-4">Chelsea Creek</h2>
+                        </div>
+                        <div class="developer-card-info">
+                            <p>Chelsea Creek is home to luxurious canal side apartments that bring a characteristically European style of living to Central London. A stunning location with tree-lined avenues and meandering waterways offer a refreshingly unique urban lifestyle.</p>
+                        </div>
+                        <div class="w-100">
+                            <h4 class="adress">Chelsea, SW6 2FS</h4>    
+                            <div style="padding-left:0.5em;padding-top:1em">
+                                <a href="">                                        
+                                    <span class="btn_arrows material-symbols-outlined card_arrows">
+                                        arrow_right_alt
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-card-header">
+                            <img src="./assets/image/devcard.png" class="img-fluid" alt="devcard">
+                            <h2 class="mt-4">Royal Exchange</h2>
+                        </div>
+                        <div class="developer-card-info">
+                            <p>Homes in the heart of Kingston upon Thames with 24 hour concierge, Residents’ only gym, cinema room and meeting room and 30 minutes to London Waterloo via train</p>
+                        </div>
+                        <div class="w-100">
+                            <h4 class="adress">Chelsea, SW6 2FS</h4>    
+                            <div style="padding-left:0.5em;padding-top:1em">
+                                <a href="">                                        
+                                    <span class="btn_arrows material-symbols-outlined card_arrows">
+                                        arrow_right_alt
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-card-header">
+                            <img src="./assets/image/devcard.png" class="img-fluid" alt="devcard">
+                            <h2 class="mt-4">White City Living</h2>
+                        </div>
+                        <div class="developer-card-info">
+                            <p>With more than 2,300 homes set in eight acres of parks and gardens, sur-rounded by world-class retail, entertainment, education, culture and commerce.</p>
+                        </div>
+                        <div class="w-100">
+                            <h4 class="adress">Chelsea, SW6 2FS</h4>    
+                            <div style="padding-left:0.5em;padding-top:1em">
+                                <a href="">                                        
+                                    <span class="btn_arrows material-symbols-outlined card_arrows">
+                                        arrow_right_alt
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="options" class="container-fluid">
+                <div class="container-fluid justify-content-center d-flex">
+                    <div class="col-lg bg-grey p-5">
+                        <h1 style="color: black">What can we help you achieve</h1>
+                        <br>
+                        <br>
+                        <div class="container d-flex justify-content-center">
+                            <button id="first" class="p-2">Let's Get to Work</button>
+                        </div>
+                    </div>
+                    <div class="col-lg bg-golden p-5">
+                        <h1 class="text-white">Check for your Stamp duty fee?</h1>
+                        <br>
+                        <br>
+                        <div class="container d-flex justify-content-center">
+                            <button id="second" class="p-2 text-white">Stamp Duty Calculator</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <!-- Additional Page Scripts -->
+    <!-- Additional Page Scripts --> 
+    <script>
+        let citiesCont = document.getElementById("cities")
+        function loadCities(){
+            let cities = ["Istanbul","London Central","Bodrum","Camberley","Enfield","Staines-upon-Thames","Alperton","Istanbul","London Central","Bodrum","Camberley","Enfield","Staines-upon-Thames","Alperton"]
+            for(city of cities){
+                citiesCont.innerHTML += `<span class="cityTag">${city}</span>`
+            }
+        }
+        loadCities()
+        let citytags = document.querySelectorAll(".cityTag")
+        citiesCont.addEventListener("click",(e)=>{
+            if(e.target.className == "cityTag"){
+                citytags.forEach(citytag => {
+                    citytag.classList.remove("active")
+                });    
+                e.target.classList.toggle("active")
+            }
+        })
+    </script>
+    <script>
+        const slider = document.querySelector('#cities');
+        let mouseDown = false;
+        let startX, scrollLeft;
+
+        let startDragging = function (e) {
+        mouseDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        };
+        let stopDragging = function (event) {
+        mouseDown = false;
+        };
+
+        slider.addEventListener('mousemove', (e) => {
+        e.preventDefault();
+        if(!mouseDown) { return; }
+        const x = e.pageX - slider.offsetLeft;
+        const scroll = x - startX;
+        slider.scrollLeft = scrollLeft - scroll;
+        });
+
+        // Add the event listeners
+        slider.addEventListener('mousedown', startDragging, false);
+        slider.addEventListener('mouseup', stopDragging, false);
+        slider.addEventListener('mouseleave', stopDragging, false);
+    </script>
 </body>
 </html>
